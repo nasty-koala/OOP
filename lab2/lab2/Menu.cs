@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Threading;
 
 namespace lab2
 {
-    public class Menu
+    public static class Menu
     {
         public static string NewMenu()
         {
-            Console.Clear();
             Console.WriteLine("\n\n\tМеню действий\n" + 
                               "Для выбора введите кодовое слово, соответствующее команде (указано в скобках) и следуйте инструкциям\n\n" +
                               "  -  Сложение(plus)\n" +
@@ -20,31 +18,40 @@ namespace lab2
 
         public static Complex NewComplex()
         {
-            Console.WriteLine("");
+            Console.Write("Введите действительную часть числа: ");
+            var r = double.Parse(Console.ReadLine());
+            Console.Write("Введите мнимую часть числа: ");
+            var i = double.Parse(Console.ReadLine());
+            
+            return new Complex(r, i);
         }
 
-        public static void MainMenu()
+        public static double NewDouble()
         {
-            switch (NewMenu())
-            {
-                case "plus":
-
-                case "minus":
-                    
-                case "mult":
-
-                case "clean":
-                    
-                case "exit":
-                    Console.WriteLine("До свидвния! ((((((");
-                    Thread.Sleep(100);
-                    break;
-                default:
-                    Console.WriteLine("Неопознанная команда!");
-                    Console.ReadKey();
-                    MainMenu();
-                    break;
-            }
+            Console.Write("Введите число: ");
+            return double.Parse(Console.ReadLine());
         }
+        
+        public static void Plus()
+        {
+            var cmplx = NewComplex();
+            var n = NewDouble();
+            Console.WriteLine($"{cmplx} + {n} = {cmplx+n}");
+        } 
+        
+        public static void Minus()
+        {
+            var cmplx = NewComplex();
+            var n = NewDouble();
+            Console.WriteLine($"{cmplx} - {n} = {cmplx-n}");
+        } 
+        
+        public static void Mult()
+        {
+            var cmplx = NewComplex();
+            var n = NewDouble();
+            Console.WriteLine($"{cmplx} * {n} = {cmplx*n}");
+        } 
+        
     }
 }
