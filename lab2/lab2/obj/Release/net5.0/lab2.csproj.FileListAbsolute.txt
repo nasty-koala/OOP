@@ -1,0 +1,16 @@
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\lab2.exe
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\lab2.deps.json
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\lab2.runtimeconfig.json
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\lab2.runtimeconfig.dev.json
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\lab2.dll
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\ref\lab2.dll
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\bin\Release\net5.0\lab2.pdb
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.csproj.AssemblyReference.cache
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.AssemblyInfoInputs.cache
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.AssemblyInfo.cs
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.csproj.CoreCompileInputs.cache
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.dll
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\ref\lab2.dll
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.pdb
+D:\desktop\SUSU\OOP-labs\projects\OOP\lab2\lab2\obj\Release\net5.0\lab2.genruntimeconfig.cache

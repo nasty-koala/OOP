@@ -2,8 +2,9 @@
 
 namespace lab0
 {
-    static class SpoungeBob
+    public class SpoungeBob
     {
+        //создание объекта, static
         static void Main()
         {
             //Создание объекта для генерации чисел

@@ -1,6 +1,21 @@
-﻿using System;
+﻿//Резанко А.А. - 1 вариант
+using System;
 using System.Threading;
 using static lab2.Menu;
+
+//Составить описание класса для представления комплексных чисел. Обеспечить выполнение
+//операций сложения, вычитания и умножения комплексного числа на вещественное число.
+//Предусмотреть поддержку числа в алгебраической форме. Все операции реализовать в виде
+//перегрузки операторов. Программа должна содержать меню, позволяющее осуществлять
+//проверку всех методов.
+
+
+//программа разбита на три файла:
+// - основная программа, которая управляет меню
+// - меню с командами
+// - класс комплексных чисел
+
+// Основная программа реализована с помощью switch
 
 namespace lab2
 {
@@ -8,34 +23,33 @@ namespace lab2
     {
         public static void Main()
         {
-            switch (NewMenu())
+            while (true) 
             {
-                case "plus":
-                    Plus();
-                    Main();
-                    break;
-                case "minus":
-                    Minus();
-                    Main();
-                    break;
-                case "mult":
-                    Mult();
-                    Main();
-                    break;
-                case "clean":
-                    Console.Clear();
-                    Main();
-                    break;
-                case "exit":
-                    Console.WriteLine("До свидания! ((((((");
-                    Thread.Sleep(100);
-                    break;
-                default:
-                    Console.WriteLine("Неопознанная команда!");
-                    Console.ReadKey();
-                    Main();
-                    break;
+                switch (NewMenu())
+                {
+                    case "plus":
+                        Plus();
+                        continue;
+                    case "minus":
+                        Minus();
+                        continue;
+                    case "mult":
+                        Mult();
+                        continue;
+                    case "clean":
+                        Console.Clear();
+                        continue;
+                    case "exit":
+                        Console.WriteLine("До свидания! ((((((");
+                        Thread.Sleep(1000);
+                        return;
+                    default:
+                        Console.WriteLine("Неопознанная команда!");
+                        Console.ReadKey();
+                        continue;
+                }
             }
+            
         }
     }
 }

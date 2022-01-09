@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Резанко А.А. - 1 вариант
+using System;
+
+// В меню выделен вывод самого меню с запросом команды, ввод данных и основные команды
 
 namespace lab2
 {
@@ -34,23 +37,23 @@ namespace lab2
         
         public static void Plus()
         {
-            var cmplx = NewComplex();
-            var n = NewDouble();
-            Console.WriteLine($"{cmplx} + {n} = {cmplx+n}");
+            var cmplx1 = NewComplex();
+            var cmplx2 = NewComplex();
+            Console.WriteLine($"({cmplx1}) + ({cmplx2}) = {cmplx1+cmplx2}");
         } 
         
         public static void Minus()
         {
-            var cmplx = NewComplex();
-            var n = NewDouble();
-            Console.WriteLine($"{cmplx} - {n} = {cmplx-n}");
+            var cmplx1 = NewComplex();
+            var cmplx2 = NewComplex();
+            Console.WriteLine($"({cmplx1}) + ({cmplx2}) = {cmplx1 - cmplx2}");
         } 
         
         public static void Mult()
         {
             var cmplx = NewComplex();
             var n = NewDouble();
-            Console.WriteLine($"{cmplx} * {n} = {cmplx*n}");
+            Console.WriteLine($"({cmplx}) * {n} = {cmplx*n}");
         } 
         
     }
