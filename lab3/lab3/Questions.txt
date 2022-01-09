@@ -1,0 +1,106 @@
+static void Main()
+        {
+            while (true)
+            {
+                switch (NewMenu())
+                {
+                    case "input":
+                        Input();
+                        continue;
+                    case "add":
+                        Add();
+                        continue;
+                    case "all":
+                        All();
+                        continue;
+                    case "sort":
+                        Sort();
+                        continue;
+                    case "firstfive":
+                        FirstFive();
+                        continue;
+                    case "lastthree":
+                        LastThree();
+                        continue;
+                    case "total":
+                        Total();
+                        continue;
+                    case "clean":
+                        Console.Clear();
+                        continue;
+                    case "exit":
+                        XML();
+                        Console.WriteLine("До свидания!");
+                        return;
+                    default:
+                        Console.WriteLine("Неопознанная команда!");
+                        Console.ReadKey();
+                        continue;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+
+        var myOrganization = new Organization();
+
+        myOrganization.Add(new HourlyWorker(WorkerType.Common, "A01", "Petrov Egor", 75));
+        myOrganization.Add(new FixPayWorker(WorkerType.Common, "A02", "Markov Stepan", 12480));
+        myOrganization.Add(new HourlyWorker(WorkerType.Director, "D01", "Krilov Artiem", 100));
+        myOrganization.Add(new FixPayWorker(WorkerType.Manager, "M01", "Mironov Dima", 15000));
+
+
+        myOrganization.SortBySalary();
+
+        const string fileName = "D:\\MyOrg.xml";
+        myOrganization.Toxml(fileName);
+
+        Console.WriteLine("А теперь выведем из файла:");
+
+        try
+        {
+            var myOrganizationNew = Organization.FromXml(fileName);
+
+            foreach (var worker in myOrganizationNew.GetWorkers())
+            {
+                Console.WriteLine(
+                    $"Worker: {worker.Type}\t{worker.Ident} : {worker.Name} {worker.Salary} rub");
+            }
+
+            Console.WriteLine($"\nTotalSalary = {myOrganizationNew.TotalSalary}");
+        }
+        catch (Exception ex) { Console.WriteLine($"Error: {ex.Message}"); }
+    }
+}
+
+
+
